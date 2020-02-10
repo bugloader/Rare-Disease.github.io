@@ -1,0 +1,89 @@
+
+p{
+	text-shadow: 1px 1px white;
+}
+
+#background{
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+#selectionsBorder{
+	margin: auto;
+	width: 80%;
+	padding: 20px;
+}
+
+#messageSection
+{
+	margin: auto;
+	width: 70%;
+	padding: 20px;
+}
+
+#shortcutBorder
+{
+	width: 55%;
+}
+
+#shortcutImage
+{
+	width: 90%;
+}
+
+#serverList
+{
+	margin: auto;
+	width: 80%;
+	padding: 20px;
+}
+
+#introduction
+{
+	margin: auto;
+	width: 75%;
+	padding: 20px;
+}
+
+#donation
+{
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+}
+
+#copyright
+{
+	background-color: green;
+}
+
+.title
+{
+	font:bold;
+	font-size: 20px;
+	color: purple;
+}
+
+.subTitle
+{
+	font:bold;
+	font-size: 15px;
+	color: darkblue;
+}
+
+.section
+{
+	margin: auto;
+	height: 8%;
+	padding: 10px;
+	background-color: green;
+	border: 3px solid darkgreen;
+}
+
+.server
+{
+	margin: auto;
+	height: 8%;
+	padding: 10px;
+}
