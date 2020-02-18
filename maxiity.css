@@ -1,4 +1,3 @@
-
 p{
 	text-shadow: 1px 1px white;
 }
@@ -30,6 +29,11 @@ p{
 #shortcutImage
 {
 	width: 90%;
+}
+
+#headcutImage
+{
+	width: 100%;
 }
 
 #serverList
