@@ -8,6 +8,11 @@ function toSubmited()
 	window.location.replace("https://bugloader.github.io/Rare-Disease.github.io/submits.html");
 }
 
+function toResUsed()
+{
+	window.location.replace("https://bugloader.github.io/Rare-Disease.github.io/resources used.html");
+}
+
 function toSchoolPage()
 {
 	window.location.replace("https://www.nordangliaeducation.com/our-schools/houston/village-school");
