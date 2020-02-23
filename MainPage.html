@@ -1,120 +1,135 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="maxity.js"></script>
     <link rel="stylesheet" type="text/css" href="maxity.css">
     <title>Rare Disease Around Us</title>
-<!--[if lte IE 8]><div>
+    <!--[if lte IE 8]><div>
     <br><br><br><h1>Your brower is too old, please install a newer one.</h1><br><br>
     <a href="http://rj.baidu.com/soft/detail/14744.html">chrome</a></div><br><br><br><br>
 <![endif]-->
 </head>
+
 <body style="background-image: url('img\\tile.png');">
     <img src="img\headImage.png" class="headImage">
     <table id="selectionsBorder">
-    	<tr>
-    		<td id="selection1" class="section" onclick="backToMenu()">Rare Disease Around Us</td>
-    		<td id="selection2" class="section">Resources</td>
-    		<td id="selection3" class="section">Submited Passages</td>
-    		<td id="selection4" class="section">Report Mistake</td>
-    	</tr>
+        <tr>
+            <td id="selection1" class="section" onclick="backToMenu()">Rare Disease Around Us</td>
+            <td id="selection2" class="section">Resources</td>
+            <td id="selection3" class="section" onclick="toSubmited()">Submited Passages</td>
+            <td id="selection4" class="section">Report Mistake</td>
+        </tr>
     </table>
     <table id="messageSection">
-    	<tr>
-    		<td id="shortcutBorder"><img src="img\sky.png" id="shortcutImage"></td>
-    		<td>
-    			<div>
-    				<p class="title">Notification:</p>
-    					<table>
-    						<tr>
-                                <td>Updated MainPage</td> <td>2/18/20</td>
-                            </tr>
-                            <tr>
-    							<td>Updated MainPage</td> <td>2/9/20</td>
-    						</tr>
-    					</table>
-    			</div>
-    			<div>
-    				<p class="title">Webpage Attribute</p>
-    				<table>
-    					<tr>
-    						<td>							
-    							<table>
-    								<tr>
-    									<td><p class="subTitle">Online</p></td>
-    									<td><p>Updating</p></td>
-    								</tr>
-    							</table>						
-    						</td>
-    						<td>
-    							<table>
-    								<tr>
-    									<td><p class="subTitle">Articles:</p></td>
-    									<td><p>0</p></td>
-   									</tr>
-    							</table>
-    						</td>
-    					</tr>
-    				</table>
-    				<p class="title" onclick="toSchoolPage()">The Village School</p>
+        <tr>
+            <td id="shortcutBorder"><img src="img\sky.png" id="shortcutImage"></td>
+            <td>
+                <div>
+                    <p class="title">Notification:</p>
+                    <table>
+                        <tr>
+                            <td>Updated MainPage</td>
+                            <td>2/18/20</td>
+                        </tr>
+                        <tr>
+                            <td>Updated MainPage</td>
+                            <td>2/9/20</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p class="title">Webpage Attribute</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="subTitle">Online</p>
+                                        </td>
+                                        <td>
+                                            <p>Updating</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p class="subTitle">Articles:</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="title" onclick="toSchoolPage()">The Village School</p>
                     <p class="subTitle">Our school is located in Houston, focusing on studing and exploring.</p>
-    			</div>
-    		</td>
-    	</tr>
+                </div>
+            </td>
+        </tr>
     </table>
     <table id="articleList">
-    	<tr>
-    		<td id="article1" class="article">
-    			<p class="subTitle">1</p>
-    		</td>
-    		<td id="article2" class="article">
-    			<p class="subTitle">2</p>
-    		</td>
-    		<td id="article3" class="article">
-    			<p class="subTitle">3</p>
-    		</td>
-    		<td id="article4" class="article">
-    			<p class="subTitle">4</p>
-    		</td>
-    		<td id="article5" class="article">
-    			<p class="subTitle">5</p>
-    		</td>
-    	</tr>
+        <tr>
+            <td id="article1" class="article">
+                <p class="subTitle">1</p>
+            </td>
+            <td id="article2" class="article">
+                <p class="subTitle">2</p>
+            </td>
+            <td id="article3" class="article">
+                <p class="subTitle">3</p>
+            </td>
+            <td id="article4" class="article">
+                <p class="subTitle">4</p>
+            </td>
+            <td id="article5" class="article">
+                <p class="subTitle">5</p>
+            </td>
+        </tr>
     </table>
     <table id="introduction">
-    	<tr>
-    		<td>
-    			<p class="title">This is our RDU website:</p>
-    			<p>We aim to study and spread the knowledge of these rare diseases around us.</p>
-		</td>
-    		<td>
-    			<p class="title">Cas Project</p>
-			<p>Creativity</p>
-			<p>Activity</p>
-			<p>Service</p>
-    		</td>
-    	</tr>
-    	<tr>
-    		<td>
-    			<p class="title">Contribution:</p>
-    			<table id="donation">
-	    			<tr>
-    					<td>Daniel</td>
-    					<td>Zhang</td>
-	    			</tr>
-    				<tr>
-    					<td>Qianjin</td>
-    					<td>Zhou</td>
-    				</tr>
-				<tr>
-    					<td>Yipu</td>
-    					<td>Wang</td>
-    				</tr>
-    			</table>	
-    		</td>
-    	</tr>
+        <tr>
+            <td>
+                <p class="title">This is our RDU website:</p>
+                <p>We aim to study and spread the knowledge of these rare diseases around us.</p>
+            </td>
+            <td>
+                <p class="title">Cas Project</p>
+                <p>Creativity</p>
+                <p>Activity</p>
+                <p>Service</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="title">Contribution:</p>
+                <table id="donation">
+                    <tr>
+                        <td>Daniel</td>
+                        <td>Zhang</td>
+                    </tr>
+                    <tr>
+                        <td>Qianjin</td>
+                        <td>Zhou</td>
+                    </tr>
+                    <tr>
+                        <td>Yipu</td>
+                        <td>Wang</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
     </table>
     <footer id="copyright">
-    	Coptright
+        Coptright
     </footer>
-</body></html>
+</body>
+
+</html>

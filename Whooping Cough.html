@@ -1,44 +1,78 @@
-<!DOCTYPE html><html lang="en">
-<head><style type="text/css">
-h1{font-size:50px;}
-p{font-size: 30px;}
-span{color: blue;}
-header{height: 100px;text-align: center;background-repeat: no-repeat;}
-div.passage{margin:0 auto;width:70%;}
-</style><title>Whooping Cough </title>
-<script type="text/javascript" src="maxity.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <style type="text/css">
+        h1 {
+            font-size: 50px;
+        }
+        
+        p {
+            font-size: 30px;
+        }
+        
+        span {
+            color: blue;
+        }
+        
+        header {
+            height: 100px;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+        
+        div.passage {
+            margin: 0 auto;
+            width: 70%;
+        }
+    </style>
+    <title>Whooping Cough </title>
+    <script type="text/javascript" src="maxity.js"></script>
     <link rel="stylesheet" type="text/css" href="maxity.css">
 </head>
+
 <body>
-	<img src="img\headImage.png" class="headImage">
+    <img src="img\headImage.png" class="headImage">
     <table id="selectionsBorder">
-    	<tr>
-    		<td id="selection1" class="section" onclick="backToMenu()">Rare Disease Around Us</td>
-    		<td id="selection2" class="section">Resources</td>
-    		<td id="selection3" class="section">Submited Passages</td>
-    		<td id="selection4" class="section">Report Mistake</td>
-    	</tr>
+        <tr>
+            <td id="selection1" class="section" onclick="backToMenu()">Rare Disease Around Us</td>
+            <td id="selection2" class="section">Resources</td>
+            <td id="selection3" class="section" onclick="toSubmited()">Submited Passages</td>
+            <td id="selection4" class="section">Report Mistake</td>
+        </tr>
     </table>
-    <header style="background-image: url('https://img.nordangliaeducation.com/resources/us/_cms-site-content/_village-school/img/logos/desktop.jpg');">
-<div><h1>Whooping Cough </h1><span>(Also known as Pertussis)</span>
-</div></header>
-<div class = "passage" style="background-image: url('https://www.solidbackgrounds.com/images/1280x1024/1280x1024-light-sky-blue-solid-color-background.jpg');"><h1>What is Whooping Cough? </h1>
-<p>Also known as pertussis, whooping cough is a highly contagious respiratory illness caused by a bacteria called Bordetella pertussis. Clinging on to the cilia of the upper respiratory system, the bacteria release deadly toxins that damage the cilia and cause the airways to swell. People infected with this bacteria are said to produce whooping sounds, hence why this disease is also known as whooping cough.</p>
-<img src="https://i.dailymail.co.uk/1s/2019/10/23/10/20076774-0-image-a-4_1571824490044.jpg" alt="https://i.dailymail.co.uk/1s/2019/10/23/10/20076774-0-image-a-4_1571824490044.jpg">
-<p>-Image of the Pertussis bacteria</p>
-<h1>How can it be Transmitted? </h1>
-<p>The most contagious methods for transmission are coughing, sneezing, or spending a lot of time with someone else and sharing the same breathing space. According to the CDC (Centers for Disease Control and Prevention), infected people are said to be most “contagious up to about two weeks after the cough begins.” However, it also reports that antibiotics may reduce the timespan of this contagious period. </p>
-<img src="data:image/jpeg;base64,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" alt="data:image/jpeg;base64,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">
-<img src="https://previews.123rf.com/images/leungchopan/leungchopan1405/leungchopan140500126/28177829-asia-woman-sneeze.jpg" alt="https://previews.123rf.com/images/leungchopan/leungchopan1405/leungchopan140500126/28177829-asia-woman-sneeze.jpg">
-<h1>What are its Symptoms? </h1>
-<p>According to NORD’s (National Organization for Rare Disorders), there are three stages of whooping cough, which are the following: catarrhal, paroxysmal, and convalescent. Catarrhal derives from the word catarrh, which is the inflammation of mucous membranes in one of the airways or cavities of the body. Before the catarrhal stage begins, the disease undergoes an incubation period that lasts about 7 to 10 days. After that, the first sign of symptoms arises through cold-like symptoms, a mild cough, and perhaps a mild fever. Infected babies may develop apnea, which is a pause in the breathing pattern, which can be very dangerous.</p>
-<p>In the paroxysmal stage, infected people will have intense moments of coughing. A paroxysm in  this stage is made up of a series of coughs in rapid succession with increasing intensity, and the last cough of the series is characterized by a “whoop” sound. During these periods of intense coughing, affected individuals may find bringing air into the lungs to be difficult. Normally, infected people cough up large amounts of mucus, which may cause vomiting. Other symptoms of this stage may include bulging eyes, prominent veins in the neck, and more.</p>
-<p>Finally, the convalescent stage begins about 4 weeks after infection. The word “convalescent” means recovering from an illness or operation. Hence, at this stage, moments of coughing become less frequent and less severe. This is also when slow recovery begins. </p>
-<h1>What can I do about it? </h1>
-<p>Fortunately, there are vaccines that can prevent whooping cough. In the United states, the vaccines DTap and Tdap prevent whooping cough. Antibiotics that prevent the spread of this disease may also be administered if you or others are infected. Because whooping cough can be transmitted through coughing, sneezing, or having close contact with someone who is infected, practicing good hygiene is recommended to prevent the spread of the disease. Good hygiene includes washing your hands, covering your mouth and nose when coughing or sneezing, and coughing into your elbow instead of your hands. </p>
-<h1>Sources </h1>
-<p>https://www.cdc.gov/pertussis/about/causes-transmission.html </p>
-<p>  https://rarediseases.org/rare-diseases/pertussis/ </p>
-</div>
-<footer><!-- FotterMessage --></footer>
-</body></html>
+    <header style="background-image: url('img\\vhs.jpg')">
+        <div>
+            <h1>Whooping Cough </h1><span>(Also known as Pertussis)</span>
+        </div>
+    </header>
+    <div class="passage" style="background-image: url('img\\sky-blue-background.jpg');">
+        <h1>What is Whooping Cough? </h1>
+        <p>Also known as pertussis, whooping cough is a highly contagious respiratory illness caused by a bacteria called Bordetella pertussis. Clinging on to the cilia of the upper respiratory system, the bacteria release deadly toxins that damage the cilia and cause the airways to swell. People infected with this bacteria are said to produce whooping sounds, hence why this disease is also known as whooping cough.</p>
+        <center>
+        	<img src="img\cell1.jpg" alt="img\cell1.jpg" width=70%>
+        </center>
+        <p>-Image of the Pertussis bacteria</p>
+        <h1>How can it be Transmitted? </h1>
+        <p>The most contagious methods for transmission are coughing, sneezing, or spending a lot of time with someone else and sharing the same breathing space. According to the CDC (Centers for Disease Control and Prevention), infected people are said to be most “contagious up to about two weeks after the cough begins.” However, it also reports that antibiotics may reduce the timespan of this contagious period. </p>
+        <center>
+        	<img src="img\cough.png" alt="img\cough.png" width=70%>
+        	<img src="img\sneeze.jpg" alt="img\sneeze.jpg" width=70%>
+        </center>
+        <h1>What are its Symptoms? </h1>
+        <p>According to NORD’s (National Organization for Rare Disorders), there are three stages of whooping cough, which are the following: catarrhal, paroxysmal, and convalescent. Catarrhal derives from the word catarrh, which is the inflammation of mucous membranes in one of the airways or cavities of the body. Before the catarrhal stage begins, the disease undergoes an incubation period that lasts about 7 to 10 days. After that, the first sign of symptoms arises through cold-like symptoms, a mild cough, and perhaps a mild fever. Infected babies may develop apnea, which is a pause in the breathing pattern, which can be very dangerous.</p>
+        <p>In the paroxysmal stage, infected people will have intense moments of coughing. A paroxysm in this stage is made up of a series of coughs in rapid succession with increasing intensity, and the last cough of the series is characterized by a “whoop” sound. During these periods of intense coughing, affected individuals may find bringing air into the lungs to be difficult. Normally, infected people cough up large amounts of mucus, which may cause vomiting. Other symptoms of this stage may include bulging eyes, prominent veins in the neck, and more.</p>
+        <p>Finally, the convalescent stage begins about 4 weeks after infection. The word “convalescent” means recovering from an illness or operation. Hence, at this stage, moments of coughing become less frequent and less severe. This is also when slow recovery begins. </p>
+        <h1>What can I do about it? </h1>
+        <p>Fortunately, there are vaccines that can prevent whooping cough. In the United states, the vaccines DTap and Tdap prevent whooping cough. Antibiotics that prevent the spread of this disease may also be administered if you or others are infected. Because whooping cough can be transmitted through coughing, sneezing, or having close contact with someone who is infected, practicing good hygiene is recommended to prevent the spread of the disease. Good hygiene includes washing your hands, covering your mouth and nose when coughing or sneezing, and coughing into your elbow instead of your hands. </p>
+        <h1>Sources </h1>
+        <p>https://www.cdc.gov/pertussis/about/causes-transmission.html </p>
+        <p> https://rarediseases.org/rare-diseases/pertussis/ </p>
+    </div>
+    <footer>
+        <!-- FotterMessage -->
+    </footer>
+</body>
+
+</html>
