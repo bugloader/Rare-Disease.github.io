@@ -10,7 +10,7 @@ function toSubmited()
 
 function toResUsed()
 {
-	window.location.replace("https://bugloader.github.io/Rare-Disease.github.io/resources used.html");
+	window.location.replace("https://bugloader.github.io/Rare-Disease.github.io/resources_used.html");
 }
 
 function toSchoolPage()
