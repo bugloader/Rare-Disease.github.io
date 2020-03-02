@@ -37,3 +37,8 @@ function toWCPage()
 {
 	window.location.replace("https://bugloader.github.io/Rare-Disease.github.io/Whooping Cough.html");
 }
+
+function toANSPage()
+{
+	window.location.replace("https://bugloader.github.io/Rare-Disease.github.io/Amnesia.html");
+}
